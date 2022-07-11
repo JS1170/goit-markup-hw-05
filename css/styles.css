@@ -475,6 +475,7 @@ li {
  {
         color: var(--accent-color);
         cursor: pointer;
+        transition: color 250ms var(--timing-function);
 }
 
 /* Logo */
@@ -522,11 +523,13 @@ li {
 .mail-tel:focus,
 .mail-tel:hover {
         color: var(--accent-color);
+        transition: color 250ms var(--timing-function);
 }
 
 .mail-tel:focus .auth-icon,
 .mail-tel:hover .auth-icon {
         fill: var(--accent-color);
+        transition: color 250ms var(--timing-function);
 }
 
 
@@ -895,6 +898,7 @@ li {
 .team-social-logo:focus {
         fill: var(--white-background-color);
         background-color: var(--accent-color);
+        transition: color 250ms var(--timing-function);
 }
 
 /* Постоянные клиенты */
@@ -939,6 +943,7 @@ li {
 .clients-link:focus {
         fill: var(--accent-color);
         border: 1px solid var(--accent-color);
+        transition: color 250ms var(--timing-function);
         
 }
 
@@ -946,6 +951,7 @@ li {
 .clients-link:focus .clients-logo {
         fill: var(--accent-color);
         border-color: var(--accent-color);
+        transition: color 250ms var(--timing-function);
 }
 
 
@@ -1029,6 +1035,7 @@ li {
 .social-box-logo:hover,
 .social-box-logo:focus {
         background-color: var(--accent-color);
+        transition: color 250ms var(--timing-function);
 }
 
 
@@ -1045,6 +1052,7 @@ li {
 .footer-block a:focus {
         color: var(--accent-color);
         cursor: pointer;
+        transition: color 250ms var(--timing-function);
  }
 
  /* Logo footer */
@@ -1071,6 +1079,7 @@ li {
         color: var(--white-text-color);
       
 }
+
 
 
 
@@ -1152,7 +1161,7 @@ button {
         color: white;
         background-color: var(--accent-color );
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-
+        transition: color 250ms var(--timing-function);
 }
 
 
@@ -1176,6 +1185,7 @@ button {
 .portfolio-list a:hover,
 .portfolio-list a:focus {
         box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        transition: color 250ms var(--timing-function);
 }
 
 
