@@ -49,8 +49,24 @@
 
     <section class="hero">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button type="button" class="hero-button">Заказать услугу</button>
+                <button data-modal-open type="button" class="hero-button">Заказать услугу</button>
+
+<!--Модальний блок-->
+                
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button data-modal-close class="modal-btn">
+                            <svg class="svg-btn" width="18px" height="18px">
+                                <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                            </svg></a>
+                        </button>
+                    </div>
+                </div>
     </section>  
+
+
+
+
 
 
 
@@ -104,9 +120,15 @@
     <div class="container">
     <h2 class="section-works">Чем мы занимаемся</h2>
     <ul class="works list">
-        <li class="img-works"><img src="./images/web.jpg" alt="програмування" height="294" width="370" /></li>
-        <li class="img-works"><img src="./images/app.jpg" alt="створення мобільних додатків" height="294" width="370"/></li>
-        <li class="img-works"><img src="./images/design.jpg" alt="дизайн" height="294" width="370" /></li>
+        <li class="img-works"><img src="./images/web.jpg" alt="програмування" height="294" width="370" />
+            <div class="text-work">Десктопные приложения</div>
+        </li>
+        <li class="img-works"><img src="./images/app.jpg" alt="створення мобільних додатків" height="294" width="370"/>
+            <div class="text-work">Мобильные приложения</div>
+        </li>
+        <li class="img-works"><img src="./images/design.jpg" alt="дизайн" height="294" width="370" />
+            <div class="text-work">Дизайнерские решения</div>  
+        </li>
     </ul>
     </div>
 </section>
@@ -285,35 +307,35 @@
             <li class="clients-box">
                 <a class="clients-link" href="">
                     <svg class="clients-logo" width="106px" height="60px">
-                        <use href="./images/symbol-defs.svg#icon-logo1"></use>
+                        <use href="./images/symbol-defs.svg#icon-logo01"></use>
                     </svg>
                 </a>
             </li>
             <li class="clients-box">
                 <a class="clients-link" href="">
                     <svg class="clients-logo" width="106px" height="60px">
-                        <use href="./images/symbol-defs.svg#icon-logo2"></use>
+                        <use href="./images/symbol-defs.svg#icon-logo02"></use>
                     </svg>
                 </a>
             </li>
             <li class="clients-box">
                 <a class="clients-link" href="">
                     <svg class="clients-logo" width="106px" height="60px">
-                        <use href="./images/symbol-defs.svg#icon-logo3"></use>
+                        <use href="./images/symbol-defs.svg#icon-logo03"></use>
                     </svg>
                 </a>
             </li>
             <li class="clients-box">
                 <a class="clients-link" href="">
                     <svg class="clients-logo" width="106px" height="60px">
-                        <use href="./images/symbol-defs.svg#icon-logo4"></use>
+                        <use href="./images/symbol-defs.svg#icon-logo04"></use>
                     </svg>
                 </a>
             </li>
             <li class="clients-box">
                 <a class="clients-link" href="">
                     <svg class="clients-logo" width="106px" height="60px">
-                        <use href="./images/symbol-defs.svg#icon-logo5"></use>
+                        <use href="./images/symbol-defs.svg#icon-logo05"></use>
                     </svg>
                 </a>
             </li>
@@ -328,7 +350,6 @@
         </div>
     </div>
 </section>
-
 </main>
 
 <!-- підвал сторінки -->
@@ -387,5 +408,6 @@
         </div>
 </div>
 </footer>
+<script src="./js/modal.js"></script>
 </body>
 </html>
