@@ -18,31 +18,31 @@
 
     <!-- шапка -->
     <header class="header">
-        <div class="site-nav container">
-            <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
-                <nav class="header-nav">
-                    <ul class="header-list list">
-                        <li class="header-link"><a href="./index.html" class="header-list-nav">Студия</a></li>
-                        <li class="header-link"><a href="/" class="header-list-nav active">Портфолио</a></li>
-                        <li class="header-link"><a href="" class="header-list-nav">Контакты</a></li>
-                    </ul>
-                </nav>
-                <ul class="auth-nav list">
-                    <li class="auth-link_item">
-                        <a href="mailto:info@devstudio.com" class="mail-tel">
-                            <svg class="auth-icon" width="16px" height="12px">
-                                <use href=".images/symbol-defs.svg#icon-envelope-hover"></use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                    <li class="auth-link_item">
-                        <a href="tel:+380961111111" class="mail-tel">
-                            <svg class="auth-icon" width="16px" height="12px">
-                                <use href=".images/symbol-defs.svg#icon-smartphone"></use>
-                            </svg>+38 096 111 11 11</a>
-                    </li>
-                </ul>
-        </div>
-    </header>
+    <div class="site-nav container">
+        <a href="./index.html" class="logo">Web<span class="logo-studio">Studio</span></a>
+        <nav class="header-nav">
+            <ul class="header-list list">
+                <li class="header-link"><a href="/" class="header-list-nav">Студия</a></li>
+                <li class="header-link"><a href="./portfolio.html" class="header-list-nav active">Портфолио</a></li>
+                <li class="header-link"><a href="" class="header-list-nav">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="auth-nav list">
+            <li class="auth-link_item">
+                <a href="mailto:info@devstudio.com" class="mail-tel">
+                    <svg class="auth-icon" width="16px" height="12px">
+                        <use href="./images/symbol-defs.svg#icon-envelope-hover"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
+            <li class="auth-link_item">
+                <a href="tel:+380961111111" class="mail-tel">
+                    <svg class="auth-icon" width="16px" height="12px">
+                        <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                    </svg>+38 096 111 11 11</a>
+            </li>
+        </ul>
+    </div>
+</header>
 
     <main>
     <section class="main-box section">
@@ -240,7 +240,8 @@
 
     <!-- підвал сторінки -->
     <footer class="footer-block">
-            <div class="container">
+        <div class="address container">
+            <div class="address-box">
                 <a href="./index.html" class="logo-web">Web<span class="logo-white">Studio</span></a>
                 <address>
                     <ul class="address-list list">
@@ -258,8 +259,42 @@
                     </ul>
                 </address>
             </div>
-        </footer>
+            <div class="social-box">
+                <h3 class="footer-tittle">Присоединяйтесь</h3>
+                <ul class="social-box-list list">
+                    <li class="social-box-icon">
+                        <a class="social-box-logo" href="">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-box-icon">
+                        <a class="social-box-logo" href="">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-box-icon">
+                        <a class="social-box-logo" href="">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-box-icon">
+                        <a class="social-box-logo" href="">
+                            <svg class="social-logo" width="20px" height="20px">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
-</body>
-
-</html>
+    <script src="./js/modal.js"></script>
+    </body>
+    
+    </html>
