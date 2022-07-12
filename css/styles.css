@@ -936,15 +936,16 @@ li {
         border: 1px solid var(--icon-color);
         border-radius: 4px;
         fill: var(--icon-color);
-        transition: border 250ms var(--timing-function),
-        fill 250ms var(--timing-function);
+        transition: border-color 250ms var(--timing-function);
 }
-       
+      
+.clients-logo {
+        transition: fill 250ms var(--timing-function);
+}
 
 .clients-link:hover,
 .clients-link:focus {
-        fill: var(--accent-color);
-        border: 1px solid var(--accent-color);
+        border-color: var(--accent-color);
         
         
 }
@@ -952,8 +953,11 @@ li {
 .clients-link:hover .clients-logo,
 .clients-link:focus .clients-logo {
         fill: var(--accent-color);
-        border-color: var(--accent-color);
+
 }
+
+
+
 
 
 /* footer style */
@@ -991,7 +995,6 @@ li {
         font-style: normal;
         text-decoration: none;
         color: var(--secondary-link-color);
-        transition: color 250ms var(--timing-function);
 }
 
 /* Блок социальных сетей */
@@ -1031,8 +1034,7 @@ li {
         margin-right: auto;
         fill: var(--white-text-color);
         background-color:rgba(255, 255, 255, 0.1);;
-        transition: fill 250ms var(--timing-function),
-        background-color 250ms var(--timing-function);
+        transition: background-color 250ms var(--timing-function);
 }
 
 
@@ -1050,7 +1052,6 @@ li {
         text-decoration: none;
         list-style: none;
         cursor: pointer;
-        transition: color 250ms var(--timing-function);
 }
 
 .footer-block a:hover,
