@@ -891,6 +891,8 @@ li {
         height: 44px;
         border-radius: 50%;
         fill: var(--icon-color);
+        transition: background-color 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
 }
 
 
@@ -898,7 +900,7 @@ li {
 .team-social-logo:focus {
         fill: var(--white-background-color);
         background-color: var(--accent-color);
-        transition: color 250ms var(--timing-function);
+        
 }
 
 /* Постоянные клиенты */
@@ -943,7 +945,8 @@ li {
 .clients-link:focus {
         fill: var(--accent-color);
         border: 1px solid var(--accent-color);
-        transition: color 250ms var(--timing-function);
+        transition: border 250ms var(--timing-function),
+        fill 250ms var(--timing-function);
         
 }
 
@@ -951,7 +954,6 @@ li {
 .clients-link:focus .clients-logo {
         fill: var(--accent-color);
         border-color: var(--accent-color);
-        transition: color 250ms var(--timing-function);
 }
 
 
@@ -990,6 +992,7 @@ li {
         font-style: normal;
         text-decoration: none;
         color: var(--secondary-link-color);
+        transition: color 250ms var(--timing-function);
 }
 
 /* Блок социальных сетей */
@@ -1029,13 +1032,16 @@ li {
         margin-right: auto;
         fill: var(--white-text-color);
         background-color:rgba(255, 255, 255, 0.1);;
+        transition: fill 250ms var(--timing-function),
+        background-color 250ms var(--timing-function);
 }
 
 
 .social-box-logo:hover,
 .social-box-logo:focus {
+        fill: var(--white-text-color);
         background-color: var(--accent-color);
-        transition: color 250ms var(--timing-function);
+        
 }
 
 
@@ -1045,14 +1051,14 @@ li {
         text-decoration: none;
         list-style: none;
         cursor: pointer;
-
+        transition: color 250ms var(--timing-function);
 }
 
 .footer-block a:hover,
 .footer-block a:focus {
         color: var(--accent-color);
         cursor: pointer;
-        transition: color 250ms var(--timing-function);
+        
  }
 
  /* Logo footer */
@@ -1146,6 +1152,10 @@ li {
                 background-color: var(--secondary-background-color);
                 border-radius: 4px;
                 border: 0;
+                transition: background-color 250ms var(--timing-function),
+                color 250ms var(--timing-function),
+                box-shadow 250ms var(--timing-function),
+                border-radius 250ms var(--timing-function);
 }
 
 
@@ -1202,6 +1212,7 @@ button {
                 display: inline-block;
                 text-decoration: none;
                 overflow: hidden;
+                transition: box-shadow 250ms var(--timing-function);
                 
 }
 
@@ -1239,6 +1250,7 @@ button {
         line-height: 1.88;
         text-align: left;
         color: var(--main-text-color);
+        transition: transform 250ms var(--timing-function);
 }
 
 
@@ -1246,7 +1258,6 @@ button {
 .portfolio-links:focus .overlay
 {
         transform: translatey(0);
-        transition-duration: 250ms;
   }
 
 .overlay {
@@ -1275,5 +1286,4 @@ button {
                 margin-bottom: 0;
                 padding: 63px 24px;
                 text-align: left;
-                
 }
